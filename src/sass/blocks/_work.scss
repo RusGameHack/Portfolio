@@ -1,0 +1,47 @@
+.work{
+    min-height: 850px;
+    @include NewBlock;
+    &__up{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__subtitle{
+        position: relative;
+        @include before_circle-center;
+    }
+    &__title{
+        padding-top: 20px;
+    }
+    &__descr{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        width: 200px;
+        padding-top: 15px;
+    }
+    &__photo{
+        height: 65px;
+    }
+    &__container{
+        @include NewBlockMin;
+        display: grid;
+        grid-template-columns: repeat(4,270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: minmax(139px, auto);
+        column-gap: 13px;
+        row-gap: 13px;
+    }
+    &__block{
+        border: 1px solid #000000;
+        padding: 30px;
+        &:last-child{
+            img{
+                height: 100%;
+            }
+        }
+    }
+    
+}

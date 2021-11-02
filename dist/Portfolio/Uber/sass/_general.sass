@@ -1,0 +1,431 @@
+
+.container
+	width: 1000px
+
+nav
+	height: 50px
+	background-color: #212121
+	position: fixed
+	width: 100%
+	top: 0
+	z-index: 5
+
+.hamburger
+	display: none
+header
+	margin-top: 50px
+	position: relative
+
+.menu
+	display: flex
+	justify-content: space-between
+	list-style-type: none
+	padding: 13px 70px
+	margin: 0
+
+	a
+		text-decoration: none
+
+.menu_link
+	color: white
+	font-style: 15px
+	font-weight: 300
+
+.menu_item
+	border-right: 2px dotted black
+	padding-right: 13px
+
+.menu_item:last-child
+	border-right: none
+*, ::after, ::before
+	box-sizing: unset
+
+.subheader
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+	position: absolute
+	width: 100%
+
+.subheader_logo
+	display: block
+	margin-top: 16px
+	max-width: 100%
+
+.subheader_official
+	margin-top: 6px
+	font-size: 13px
+	color: rgba(255, 255, 255, 0.502)
+	font-weight: 400
+
+.subheader
+	.subheader_phone
+		display: block
+		margin-top: 8px
+		font-size: 20px
+		font-weight: 700
+		text-align: right
+		color: $colorWhite
+		text-transform: uppercase
+		line-height: 12px
+
+	.subheader_call
+		font-size: 12px
+		color: $colorWhite
+		font-weight: 300
+		margin-top: 19px
+		text-align: right
+
+.subheader
+	.xs-visible
+		display: none
+.subheader_btn
+	margin-top: 19px
+	+btn_hover
+
+.promo_btn
+	margin-top: 122px
+	+btn_hover
+
+.subheader_btn, .promo_btn
+	width: 172px
+	height: 46px
+	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+	border: none
+	border-radius: 4px
+	background-image: linear-gradient(to top, $colorONE 0%, #4ce2ff 100%)
+	text-shadow: 0.707px 0.707px 0px rgba(0, 0, 0, 0.21)
+	color: white
+	font-size: 14px
+	text-transform: uppercase
+	+btn_hover
+
+.promo
+	max-height: 800px
+	background: url('../bg/Header.png') (center / cover) no-repeat
+	padding: 150px 0 135px 0
+	text-align: center
+
+	.promo_header
+		font-size: 60px
+		line-height: 60px
+		color: $colorWhite
+		text-transform: uppercase
+		font-weight: 700
+
+.promo_subheader
+	color: $colorWhite
+	text-transform: uppercase
+	font-weight: 700
+
+.promo .promo_subheader
+	font-size: 36px
+	font-weight: 600
+	margin-top: 22px
+
+.promo_descr
+	font-size: 18px
+	color: $colorWhite
+	line-height: 1.333
+	margin-top: 23px
+	font-weight: 300
+
+.reasons
+	padding: 71px 0 65px 0
+
+	.row
+		--bs-gutter-x:0
+
+.label
+	margin: 0 auto
+	height: 24px
+	width: 112px
+	padding: 8px 12px 0px
+	background-color: #000000
+	color: $colorWhite
+	font-size: 11px
+	font-weight: 300
+	text-transform: uppercase
+	text-align: center
+.title
+	margin-bottom: 0
+	margin-top: 38px
+	color: #222222
+	font-size: 38px
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+	line-height: 1
+
+.subtitle
+		margin-top: 19px
+		font-size: 17px
+		color: rgb(34, 34, 34)
+		text-align: center
+		font-weight: 400
+
+.reasons .reasons_block
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 35px
+
+	.reasons_round
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 26px
+		width: 113px
+		height: 113px
+		background-color: $colorONE
+		border-radius: 100%
+
+	.reasons_descr
+		width: 343px
+
+		.reasons_subtitle
+			line-height: 21px
+			color: $colorONE
+			font-size: 17px
+			font-weight: 400
+
+		.reasons_text
+			color: #202020
+			font-size: 15px
+			font-weight: 300
+			line-height: 21px
+
+.mobile
+		min-height: 864px
+		padding: 48px 0 79px 0
+		background: url('../bg/mobile.png') center (center / cover) no-repeat
+		.row
+				margin-top: 32px      
+		 
+		&_item
+				position: relative
+				width: 320px
+				height: 280px
+				margin: 0 auto
+				margin-bottom: 19px
+				
+				&_1
+						background: url('../img/mobile/mobile1.png') center (center / cover) no-repeat
+				&_2
+						background: url('../img/mobile/mobile2.png') center (center / cover) no-repeat
+				&_3
+						background: url('../img/mobile/mobile3.png') center (center / cover) no-repeat
+				&_4
+						background: url('../img/mobile/mobile4.png') center (center / cover) no-repeat
+				&_5
+						background: url('../img/mobile/mobile5.png') center (center / cover) no-repeat
+				&_6
+						background: url('../img/mobile/mobile6.png') center (center / cover) no-repeat
+				&_subtitle
+						color: $colorWhite
+						font-size: 24px
+						font-weight: 400
+						line-height: 31px
+						padding-top: 92px
+						text-transform: uppercase
+						text-align: center
+				&_plus
+						display: flex
+						justify-content: center
+						align-items: center
+						border-radius: 100%
+						position: absolute
+						bottom: 35px
+						left: 50%
+						transform: translateX(-50%)
+						background-color: black
+						width: 26px
+						height: 26px
+						margin: 0 auto
+						padding: 6px
+						cursor: pointer
+						&:before
+							content: ''
+							display: block
+							width: 14px
+							height: 2px
+							background-color: $colorONE
+						&:after
+							content: ''
+							display: block
+							width: 2px
+							height: 14px
+							background-color: $colorONE
+							position: absolute
+							transition: 0.3s all
+						&:hover
+							&:before, &:after
+								background-color: $colorTWO
+.change, .world
+	.label
+		color: black
+		background-color: $colorWhite
+	.title
+		color: $colorWhite
+	.subtitle
+		color: $colorWhite
+
+.change
+		height: 702px
+		background: url('../bg/Change.png') center no-repeat
+		padding: 55px 0 140px 0
+		
+		.change_car
+			display: block
+			margin: 0 auto
+			margin-top: 56px
+		.change_text
+			font-size: 17px
+			font-weight: 300
+			color: rgb(34, 34, 34)
+			text-align: center
+
+
+
+.require
+	padding: 68px 0 84px 0
+	.col-md-6
+		margin-top: 44px
+	&_title
+		color: $colorThree
+		font-size: 22px
+		font-weight: 400
+		&_red
+			color: $colorTWO
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			+require_text
+			font-weight: 300
+			position: relative
+			margin-bottom: 10px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				vertical-align: middle
+				left: -32px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url('../img/if/check.png') center (center / cover) no-repeat
+		&_red
+			li
+				&:before
+					background: url('../img/if/check_red.png') center (center / cover) no-repeat
+	&_descr
+		+require_text
+		font-weight: 400
+		color: $colorThree
+	
+.world
+	background: url(../bg/world.png) center (center / cover) no-repeat
+	height: 620px
+	padding: 50px 0 50px 0
+	width: 100%
+	a 
+		text-decoration: none
+		display: block
+		text-align: center
+		font-weight: 700px
+		font-size: 15px
+		color: $colorONE
+		text-transform: uppercase
+		margin-top: 480px
+
+footer
+	height: 154px
+	padding: 12px 22px 0 22px
+.end
+	&_download
+		img
+			margin-left: 6px
+			height: 26px
+			width: 95px
+
+	&_line
+		display: block
+		margin: 0 auto
+		background-color: $colorONE
+		width: 299px
+		height: 4px
+
+	&_content
+		display: flex
+		padding-top: 33px
+		justify-content: space-between
+		text-align: center
+
+	&_sub
+		width: 33%
+		margin: auto 0
+		display: flex
+		justify-content: right
+		&_circle
+			background-color: black
+			width: 32px
+			height: 32px
+			border-radius: 50%
+			margin-right: 9px
+			a
+				vertical-align: -webkit-baseline-middle
+				margin-top: 6px
+				text-decoration: none
+				display: inline-block
+				&.one
+					&:before
+						content: "\f09a"
+						color: white
+				&.two
+					&:before
+						content: "\ea96"
+						color: white
+				&.three
+					&:before
+						content: "\f08c"
+						color: white
+				&.four
+					&:before
+						content: "\f16d"
+						color: white
+
+	&_download
+		display: flex
+		width: 33%
+		justify-content: flex-end
+		margin: auto 0
+	
+	&_menu
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		a
+			text-decoration: none
+			text-transform: uppercase
+		&_top
+			a
+				font-size: 15px
+				font-weight: 300
+				color: #070716
+				&.center 
+					padding: 0 44px 0 44px
+		&_down
+			padding-top: 11px
+			a
+				font-size: 11px
+				font-weight: 300
+				color: #999999
+				margin-right: 22px
+		&_lanquage
+			padding-top: 15px
+			a
+				font-size: 11px
+				font-weight: 400
+				color: $colorONE
+        

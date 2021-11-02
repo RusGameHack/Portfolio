@@ -1,0 +1,50 @@
+@mixin circle{
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+        padding-left: 10px;
+    }
+}
+@mixin before_circle{
+    @include circle;
+    &:before{
+        top: -25%;
+        left: -2%;
+    }
+}
+
+@mixin before_circle-center{
+    @include before-circle;
+    &:before{
+        margin: auto;
+        right: 0;
+        left: 0;
+    }
+}
+
+@mixin circleMini{
+    &:before{
+        content: '';
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        background: $main-color;
+        border-radius: 100%;
+        z-index: 10;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@mixin NewBlock{
+    padding-top: 120px;
+}
+@mixin NewBlockMin{
+    padding-top: 65px;
+}

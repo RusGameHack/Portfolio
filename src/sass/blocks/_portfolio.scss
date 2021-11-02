@@ -1,0 +1,40 @@
+.portfolio{
+    min-height: 559px;
+    @include NewBlock;
+    &__up{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__subtitle{
+        position: relative;
+        @include before_circle-center;
+    }
+    &__container{
+        @include NewBlockMin;
+        display: grid;
+        grid-template-columns: repeat(3,280px);
+        grid-template-rows: repeat(2, 280px);
+        grid-auto-rows: minmax(139px, auto);
+        column-gap: 5px;
+        row-gap: 5px;
+    } 
+    a{
+        margin: 0 auto;
+        &.protfolio__link{
+            &:last-child
+                {
+                    grid-column: 1 / 4;
+                }
+            img{
+                &:last-child
+                {
+                    width: 100%;
+                }
+            }
+        }   
+    }
+    
+}

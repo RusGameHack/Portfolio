@@ -1,0 +1,16 @@
+.policy{
+    padding: 50px 0 50px 0;
+    .title{
+        &_fz48{
+            text-align: center;
+            font-size: 48px;
+        }
+        &_fz16{
+            display: inline;
+        }
+        &_fz36{
+            padding: 25px 0 15px 0;
+            line-height: 40px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.animTurn{
+    transform: rotate(720deg);
+    transition: all 0.8s;
+}
+.animLeave{
+    transition: all 1s;
+    opacity: 0;
+}

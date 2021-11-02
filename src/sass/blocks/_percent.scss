@@ -1,0 +1,40 @@
+.percent{
+    min-height: 170px;
+    @include NewBlock;
+    &__block{
+        &-head{
+            display: flex;
+            justify-content: space-between;
+            &_name{
+                position: relative;
+                padding-left: 12px;
+                @include before-circle;
+                &:before{
+                    top: -8px;
+                }
+            }
+        }
+        &_scale{
+            position: relative;
+            margin-top: 20px;
+            width: 350px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+            span{
+                position: absolute;
+                height: 14px;
+                border-radius: 4px;
+                background-color: $main-color;
+            }
+        }
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(3,350px);
+        grid-template-rows: repeat(2, 70px);
+        grid-auto-rows: minmax(70px, auto);
+        column-gap: 45px;
+        row-gap: 30px;
+    }
+}
